@@ -1,0 +1,18 @@
+{
+  "name": "mern-crud",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "dev-server": "npm run dev --prefix backend",
+    "dev-client": "npm run dev --prefix frontend",
+    "dev": "concurrently \"npm run dev-server\" \"npm run dev-client\"",
+    "heroku-postbuild": "npm install --prefix frontend --only=dev && npm install --prefix frontend && npm run build --prefix frontend && npm install --prefix backend",
+    "start": "cd backend && node app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^7.0.0"
+  }
+}
