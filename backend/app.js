@@ -20,12 +20,14 @@ mongoose.connect(mongo_url).then(() => {
 app.use(userRouter);
 
 
-// if (process.env.NODE_ENV == "production") {
-let __dirname = path.dirname(new URL(import.meta.url).pathname);
-__dirname = __dirname.replace("/", "");
-app.use(express.static(path.resolve(__dirname, "../frontend/dist")));
-app.get("*", (req, res) => res.sendFile(path.resolve(__dirname, "../frontend/dist/index.html")));
-// }
+if (process.env.NODE_ENV == "production") {
+	let __dirname = path.dirname(new URL(import.meta.url).pathname);
+	__dirname = __dirname.replace("/", "");
+	console.log("1. ", __dirname);
+	console.log("2. ", path.resolve(__dirname, "../frontend/dist"));
+	app.use(express.static(path.resolve(__dirname, "../frontend/dist")));
+	app.get("*", (req, res) => res.sendFile(path.resolve(__dirname, "../frontend/dist/index.html")));
+}
 
 
 const port = process.env.PORT || 5000;
