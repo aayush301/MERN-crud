@@ -1,9 +1,9 @@
-import express from "express";
-import mongoose from "mongoose";
-import cors from  "cors";
-import userRouter from "./routes/user.js"
-import path from "path";
-import "dotenv/config";
+const express = require("express");
+const mongoose = require("mongoose");
+const cors = require("cors");
+const userRouter = require("./routes/user.js");
+const path = require("path");
+require("dotenv").config();
 const app = express();
 const mongo_url = process.env.MONGO_URI;
 
@@ -20,14 +20,12 @@ mongoose.connect(mongo_url).then(() => {
 app.use(userRouter);
 
 
-if (process.env.NODE_ENV == "production") {
-	let __dirname = path.dirname(new URL(import.meta.url).pathname);
-	__dirname = __dirname.replace("/", "");
+// if (process.env.NODE_ENV == "production") {
 	console.log("1. ", __dirname);
 	console.log("2. ", path.resolve(__dirname, "../frontend/dist"));
 	app.use(express.static(path.resolve(__dirname, "../frontend/dist")));
 	app.get("*", (req, res) => res.sendFile(path.resolve(__dirname, "../frontend/dist/index.html")));
-}
+// }
 
 
 const port = process.env.PORT || 5000;
