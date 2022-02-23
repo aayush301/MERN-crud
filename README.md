@@ -13,6 +13,7 @@ Note:
 * [Dev-dependencies](#dev-dependencies)
 * [Prerequisites](#prerequisites)
 * [Installation and setup](#installation-and-setup)
+* [Backend API](#backend-api)
 * [npm scripts](#npm-scripts)
 * [Useful Links](#useful-links)
 * [Contact](#contact)
@@ -28,6 +29,7 @@ Note:
 ## Tools and Technologies
 - HTML
 - CSS
+- Material UI
 - Javascript
 - Node.js
 - Express.js
@@ -65,23 +67,33 @@ Note:
 1. Download the source code in the desired location on your system.
 2. Open the code in your code editor.
 3. Go to terminal and type the following command and hit enter:
-	```sh
-	npm run install-all
-	```
+    ```sh
+    npm run install-all
+    ```
     This will install all the dependencies and dev-dependencies required at root, at frontend and at backend in your project.
 
 4. Create a file named ".env" inside the backend folder and enter the following credentials:
-	```js
-	MONGO_URI=your-mongo-uri
-	```
+    ```js
+    MONGO_URI=your-mongo-uri
+    ```
 
 5. Go to terminal and type the following command and hit enter:
-	```sh
-	npm run dev
-	```
+    ```sh
+    npm run dev
+    ```
     This will start both backend and frontend.
 
 6. Open browser and go to url: http://localhost:3000. You can see the app running now.
+
+
+## Backend API
+<pre>
+- GET     /api/users      [fetch all the users from the db]
+- GET     /api/user/:id   [fetch a user by id from the db]
+- POST    /api/users      [add a user into the db]
+- PUT     /api/users/:id  [update a user by id in the db]
+- DELETE  /api/users/:id  [delete a user by id from the db]
+</pre>
 
 
 ## npm scripts
