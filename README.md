@@ -113,22 +113,30 @@ Inside backend folder:
 - `npm start`: Starts backend without nodemon.
 
 ## Useful Links
-- Demo: https://mern-crud-aayush.herokuapp.com/
-- Github Repo: https://github.com/aayush301/MERN-crud
-- Nodejs download: https://nodejs.org/
-- VS Code download: https://code.visualstudio.com/
-- Tutorials: https://www.w3schools.com/
-- Reactjs docs: https://reactjs.org/docs/getting-started.html
-- Vitejs docs: https://vitejs.dev/guide/
-- npmjs docs: https://docs.npmjs.com/
-- Expressjs docs: https://expressjs.com/
-- Mongoosejs docs: https://mongoosejs.com/docs/index.html
-- Mongodb atlas: https://www.mongodb.com/cloud/atlas/register
-- Mongodb docs: https://docs.mongodb.com/manual/introduction/
-- Github docs: https://docs.github.com/en/get-started/quickstart/hello-world
-- Git cheatsheet: https://education.github.com/git-cheat-sheet-education.pdf
-- VS Code keyboard shortcuts: https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf
+- This project
+  - Demo: https://mern-crud-aayush.herokuapp.com/
+  - Github Repo: https://github.com/aayush301/MERN-crud
 
+- Official Docs
+  - Reactjs docs: https://reactjs.org/docs/getting-started.html
+  - npmjs docs: https://docs.npmjs.com/
+  - Mongodb docs: https://docs.mongodb.com/manual/introduction/
+  - Github docs: https://docs.github.com/en/get-started/quickstart/hello-world
+
+- Youtube tutorials
+  - Mern crud: https://youtu.be/UTA2XWPj97Q
+  - Expressjs: https://youtu.be/L72fhGm1tfE
+  - React: https://youtu.be/EHTWMpD6S_0
+
+- Download links
+  - Nodejs download: https://nodejs.org/
+  - VS Code download: https://code.visualstudio.com/
+
+- Cheatsheets
+  - Git cheatsheet: https://education.github.com/git-cheat-sheet-education.pdf
+  - VS Code keyboard shortcuts: https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf
+  - CSS Selectors Cheatsheet: https://frontend30.com/css-selectors-cheatsheet/
+  
 
 ## Contact
 - Email: aayush5521186@gmail.com
